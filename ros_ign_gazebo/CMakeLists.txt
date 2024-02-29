@@ -9,7 +9,7 @@ find_package(catkin
 )
 
 # Fortress
-if ("$ENV{IGNITION_VERSION}" STREQUAL "fortress")
+if ("$ENV{IGNITION_VERSION}" STREQUAL "fortress" OR TRUE)
   find_package(ignition-transport11 REQUIRED)
   set(IGN_TRANSPORT_VER ${ignition-transport11_VERSION_MAJOR})
 
